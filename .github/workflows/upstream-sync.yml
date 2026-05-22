@@ -1,0 +1,102 @@
+name: Sync from upstream and generate assets
+
+on:
+  schedule:
+    # Check daily at 06:00 UTC
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force rebuild even if tag exists"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch latest upstream release
+        id: latest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=$(gh api repos/TecharoHQ/anubis/releases/latest --jq '.tag_name')
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Check if tag already exists
+        id: tagcheck
+        run: |
+          TAG="${{ steps.latest.outputs.tag }}"
+          EXISTS=$(git ls-remote origin refs/tags/${TAG} | wc -l)
+          echo "exists=${EXISTS}" >> "$GITHUB_OUTPUT"
+
+      - name: Skip if tag exists and not forced
+        if: 'steps.tagcheck.outputs.exists != ''0'' && inputs.force != true'
+        run: |
+          echo "Tag ${{ steps.latest.outputs.tag }} already exists. Skipping."
+          exit 0
+
+      - name: Clone upstream at tag
+        run: |
+          git clone --branch ${{ steps.latest.outputs.tag }} --depth 1 \
+            https://github.com/TecharoHQ/anubis.git /tmp/anubis-upstream
+
+      - name: Build assets
+        working-directory: /tmp/anubis-upstream
+        run: |
+          npm ci
+          make assets
+
+      - name: Rewrite module path and push tag
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd /tmp/anubis-upstream
+
+          # Rewrite module path in go.mod
+          sed -i 's|module github.com/TecharoHQ/anubis|module github.com/ToastyTheBot/anubis|' go.mod
+
+          # Rewrite ALL Go imports (including internal packages)
+          find . -name '*.go' -exec sed -i 's|github\.com/TecharoHQ/anubis|github.com/ToastyTheBot/anubis|g' {} +
+
+          # Remove .gitignore rules that hide generated assets
+          rm -f lib/challenge/preact/static/.gitignore
+          rm -f web/static/js/.gitignore
+          rm -f xess/.gitignore
+          sed -i '/^web\/static\/locales\/\*\.json$/d' .gitignore
+
+          # Remove husky hooks that fail on git commit
+          rm -rf node_modules/.husky .husky
+
+          TAG="${{ steps.latest.outputs.tag }}"
+
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -rf .github .gitattributes .gitmodules .gitpod.yml .vscode
+          git add -A
+          git commit --no-verify -m "build: assets for upstream ${TAG}"
+
+          # Tag with the same version as upstream
+          git tag -d "${TAG}" >/dev/null 2>&1; git tag "${TAG}"
+
+          # Push tag to fork using gh auth
+          cd /tmp/anubis-upstream
+          gh auth setup-git
+          git remote add fork https://github.com/ToastyTheBot/anubis.git 2>/dev/null || true
+          git push fork "${TAG}" --force --no-verify
+
+          echo "Pushed tag ${TAG} for upstream ${TAG}"
