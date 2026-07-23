@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TecharoHQ/anubis/data"
+	"github.com/ToastyTheBot/anubis/data"
 	"k8s.io/apimachinery/pkg/util/yaml"
 )
 

@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/data"
-	"github.com/TecharoHQ/anubis/lib/thoth/thothmock"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/data"
+	"github.com/ToastyTheBot/anubis/lib/thoth/thothmock"
 )
 
 func TestDefaultPolicyMustParse(t *testing.T) {

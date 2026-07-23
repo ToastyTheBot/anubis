@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/config"
 	"github.com/facebookgo/flagenv"
 	"sigs.k8s.io/yaml"
 )

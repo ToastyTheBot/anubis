@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/store"
 	valkey "github.com/redis/go-redis/v9"
 )
 

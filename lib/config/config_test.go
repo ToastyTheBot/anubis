@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/data"
-	. "github.com/TecharoHQ/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/data"
+	. "github.com/ToastyTheBot/anubis/lib/config"
 )
 
 func p[V any](v V) *V { return &v }

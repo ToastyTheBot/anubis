@@ -8,7 +8,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/TecharoHQ/anubis/lib/checker"
+	"github.com/ToastyTheBot/anubis/lib/checker"
 )
 
 var (

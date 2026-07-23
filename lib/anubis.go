@@ -21,22 +21,22 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/decaymap"
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/internal/dnsbl"
-	"github.com/TecharoHQ/anubis/internal/ogtags"
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/localization"
-	"github.com/TecharoHQ/anubis/lib/policy"
-	"github.com/TecharoHQ/anubis/lib/policy/checker"
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/decaymap"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/internal/dnsbl"
+	"github.com/ToastyTheBot/anubis/internal/ogtags"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/localization"
+	"github.com/ToastyTheBot/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/lib/policy/checker"
+	"github.com/ToastyTheBot/anubis/lib/store"
 
 	// challenge implementations
-	_ "github.com/TecharoHQ/anubis/lib/challenge/metarefresh"
-	_ "github.com/TecharoHQ/anubis/lib/challenge/preact"
-	_ "github.com/TecharoHQ/anubis/lib/challenge/proofofwork"
+	_ "github.com/ToastyTheBot/anubis/lib/challenge/metarefresh"
+	_ "github.com/ToastyTheBot/anubis/lib/challenge/preact"
+	_ "github.com/ToastyTheBot/anubis/lib/challenge/proofofwork"
 )
 
 var (
@@ -168,7 +168,7 @@ func (s *Server) hydrateChallengeRule(rule *policy.Bot, chall *challenge.Challen
 		rule.Challenge.Difficulty = chall.Difficulty
 	}
 	if rule.Challenge.ReportAs != 0 {
-		s.logger.Warn("[DEPRECATION] the report_as field in this bot rule is deprecated, see https://github.com/TecharoHQ/anubis/issues/1310 for more information", "bot_name", rule.Name, "difficulty", rule.Challenge.Difficulty, "report_as", rule.Challenge.ReportAs)
+		s.logger.Warn("[DEPRECATION] the report_as field in this bot rule is deprecated, see https://github.com/ToastyTheBot/anubis/issues/1310 for more information", "bot_name", rule.Name, "difficulty", rule.Challenge.Difficulty, "report_as", rule.Challenge.ReportAs)
 	}
 	if rule.Challenge.Algorithm == "" {
 		rule.Challenge.Algorithm = chall.Method

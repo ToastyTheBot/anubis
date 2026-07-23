@@ -9,8 +9,8 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import (
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/lib/localization"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/lib/localization"
 )
 
 func page(redir, challenge string, difficulty int, loc *localization.SimpleLocalizer) templ.Component {

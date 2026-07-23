@@ -10,7 +10,7 @@ import (
 	"net/netip"
 	"strings"
 
-	"github.com/TecharoHQ/anubis"
+	"github.com/ToastyTheBot/anubis"
 	"github.com/sebest/xff"
 )
 
