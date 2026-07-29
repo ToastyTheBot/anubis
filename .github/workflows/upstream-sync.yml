@@ -20,13 +20,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Keep these in sync with upstream's .github/workflows/go.yml: upstream's
+      # package-lock.json and go.mod are only guaranteed to build with the
+      # toolchain versions upstream itself uses.
       - uses: actions/setup-go@v5
         with:
-          go-version: "1.24"
+          go-version: "stable"
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24.11.0"
 
       - name: Fetch latest upstream release
         id: latest
