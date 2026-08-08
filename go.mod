@@ -1,4 +1,4 @@
-module github.com/TecharoHQ/anubis
+module github.com/ToastyTheBot/anubis
 
 go 1.26.3
 

@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis"
-	libanubis "github.com/TecharoHQ/anubis/lib"
+	"github.com/ToastyTheBot/anubis"
+	libanubis "github.com/ToastyTheBot/anubis/lib"
 	"github.com/mxschmitt/playwright-go"
 )
 

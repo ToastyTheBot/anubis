@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	chall "github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/localization"
+	chall "github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/localization"
 	"github.com/a-h/templ"
 )
 

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/store/storetest"
+	"github.com/ToastyTheBot/anubis/lib/store/storetest"
 	"go.etcd.io/bbolt"
 )
 
