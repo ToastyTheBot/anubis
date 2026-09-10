@@ -26,15 +26,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/data"
-	"github.com/TecharoHQ/anubis/internal"
-	libanubis "github.com/TecharoHQ/anubis/lib"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/metrics"
-	botPolicy "github.com/TecharoHQ/anubis/lib/policy"
-	"github.com/TecharoHQ/anubis/lib/thoth"
-	"github.com/TecharoHQ/anubis/web"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/data"
+	"github.com/ToastyTheBot/anubis/internal"
+	libanubis "github.com/ToastyTheBot/anubis/lib"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/metrics"
+	botPolicy "github.com/ToastyTheBot/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/lib/thoth"
+	"github.com/ToastyTheBot/anubis/web"
 	"github.com/facebookgo/flagenv"
 	"github.com/google/uuid"
 	_ "github.com/joho/godotenv/autoload"
@@ -185,7 +185,7 @@ func makeReverseProxy(target string, targetSNI string, targetHost string, insecu
 			// Some upstreams (notably gitweb: /?p=repo.git;a=summary) use ';'
 			// as a query separator, so restore the client's raw query verbatim
 			// to match the previous NewSingleHostReverseProxy behavior.
-			// This fixes https://github.com/TecharoHQ/anubis/issues/1763.
+			// This fixes https://github.com/ToastyTheBot/anubis/issues/1763.
 			if tq := targetUri.RawQuery; tq == "" || r.In.URL.RawQuery == "" {
 				r.Out.URL.RawQuery = tq + r.In.URL.RawQuery
 			} else {

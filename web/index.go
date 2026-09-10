@@ -7,9 +7,9 @@ import (
 
 	"github.com/a-h/templ"
 
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/localization"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/localization"
 )
 
 func Base(title string, body templ.Component, impressum *config.Impressum, honeypot *config.Honeypot, localizer *localization.SimpleLocalizer) templ.Component {

@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/TecharoHQ/anubis/lib/store"
-	_ "github.com/TecharoHQ/anubis/lib/store/all"
+	"github.com/ToastyTheBot/anubis/lib/store"
+	_ "github.com/ToastyTheBot/anubis/lib/store/all"
 )
 
 var (

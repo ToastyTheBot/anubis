@@ -4,9 +4,9 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/store"
 
-	_ "github.com/TecharoHQ/anubis/lib/store/all"
+	_ "github.com/ToastyTheBot/anubis/lib/store/all"
 )
 
 type DnsCache struct {

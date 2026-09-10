@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/internal/dns"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/store/memory"
+	"github.com/ToastyTheBot/anubis/internal/dns"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/store/memory"
 )
 
 func newTestDNS(t *testing.T) *dns.Dns {

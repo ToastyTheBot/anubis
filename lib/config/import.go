@@ -10,8 +10,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/TecharoHQ/anubis/data"
-	"github.com/TecharoHQ/anubis/internal/multifile"
+	"github.com/ToastyTheBot/anubis/data"
+	"github.com/ToastyTheBot/anubis/internal/multifile"
 	"github.com/fvbommel/sortorder"
 	"github.com/goreleaser/fileglob"
 	"k8s.io/apimachinery/pkg/util/yaml"

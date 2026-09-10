@@ -4,7 +4,7 @@ import (
 	"math/rand/v2"
 	"strings"
 
-	"github.com/TecharoHQ/anubis/internal/dns"
+	"github.com/ToastyTheBot/anubis/internal/dns"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"

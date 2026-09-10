@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/TecharoHQ/anubis/internal/actorify"
+	"github.com/ToastyTheBot/anubis/internal/actorify"
 )
 
 type unit struct{}

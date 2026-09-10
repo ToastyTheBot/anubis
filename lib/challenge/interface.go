@@ -7,9 +7,9 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/policy"
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/lib/store"
 	"github.com/a-h/templ"
 )
 

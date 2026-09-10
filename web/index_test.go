@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/localization"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/localization"
 	"github.com/a-h/templ"
 )
 
