@@ -9,7 +9,7 @@ import (
 	"slices"
 	"testing"
 
-	datapkg "github.com/TecharoHQ/anubis/data"
+	datapkg "github.com/ToastyTheBot/anubis/data"
 	"github.com/goreleaser/fileglob"
 	"k8s.io/apimachinery/pkg/util/yaml"
 )

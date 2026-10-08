@@ -21,4 +21,3 @@ node_modules
 # how does this get here
 doc/VERSION
 
-web/static/locales/*.json

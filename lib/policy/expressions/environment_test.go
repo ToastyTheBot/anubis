@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/internal/dns"
-	"github.com/TecharoHQ/anubis/lib/store/memory"
+	"github.com/ToastyTheBot/anubis/internal/dns"
+	"github.com/ToastyTheBot/anubis/lib/store/memory"
 	"github.com/google/cel-go/cel"
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"

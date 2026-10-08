@@ -16,14 +16,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/data"
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/policy"
-	"github.com/TecharoHQ/anubis/lib/store"
-	"github.com/TecharoHQ/anubis/lib/thoth/thothmock"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/data"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/thoth/thothmock"
 )
 
 // TLogWriter implements io.Writer by logging each line to t.Log.

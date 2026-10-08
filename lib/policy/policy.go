@@ -10,17 +10,17 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/internal/dns"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/policy/checker"
-	"github.com/TecharoHQ/anubis/lib/store"
-	"github.com/TecharoHQ/anubis/lib/thoth"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/internal/dns"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/policy/checker"
+	"github.com/ToastyTheBot/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/thoth"
 	"github.com/fahedouch/go-logrotate"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 
-	_ "github.com/TecharoHQ/anubis/lib/store/all"
+	_ "github.com/ToastyTheBot/anubis/lib/store/all"
 )
 
 // LogRotateTimeFormat is the timestamp a rotated log file is named after.

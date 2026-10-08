@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/store/memory"
+	"github.com/ToastyTheBot/anubis/lib/store/memory"
 )
 
 // newTestDNS is a helper function to create a new Dns object with an in-memory cache for testing.

@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/lib/policy"
-	"github.com/TecharoHQ/anubis/lib/thoth/thothmock"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/lib/thoth/thothmock"
 )
 
 func TestInvalidChallengeMethod(t *testing.T) {

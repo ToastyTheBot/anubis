@@ -307,9 +307,9 @@ func TestPathChecker_XOriginalURI(t *testing.T) {
 }
 
 // TestPathChecker_GHSA_6wcg_mqvh_fcvg is a regression test for
-// https://github.com/TecharoHQ/anubis/security/advisories/GHSA-6wcg-mqvh-fcvg.
+// https://github.com/ToastyTheBot/anubis/security/advisories/GHSA-6wcg-mqvh-fcvg.
 //
-// PR https://github.com/TecharoHQ/anubis/pull/1015 added the ability for
+// PR https://github.com/ToastyTheBot/anubis/pull/1015 added the ability for
 // reverse proxies using Anubis in subrequest auth mode to look at the path
 // of a request as there are many rules in the wild that rely on checking
 // the path. This is how access to things like robots.txt or anything in the

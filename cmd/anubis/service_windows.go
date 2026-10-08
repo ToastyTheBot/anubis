@@ -14,8 +14,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/internal/servicesid"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/internal/servicesid"
 	"github.com/joho/godotenv"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc"
