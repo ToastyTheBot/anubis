@@ -4,7 +4,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/config"
 )
 
 func TestHeaderRulesReadAllValues(t *testing.T) {

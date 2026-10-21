@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/store"
 )
 
 type unavailableStore struct{ store.Interface }

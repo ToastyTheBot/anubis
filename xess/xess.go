@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/internal"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/internal"
 )
 
 var (

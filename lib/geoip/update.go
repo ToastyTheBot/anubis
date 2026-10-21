@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/lib/config"
 	"github.com/maxmind/geoipupdate/v8/client"
 )
 

@@ -10,8 +10,8 @@ import (
 	"cel.dev/cel-go/cel"
 	"cel.dev/cel-go/common/types"
 	"cel.dev/cel-go/common/types/ref"
-	"github.com/TecharoHQ/anubis/internal/dns"
-	"github.com/TecharoHQ/anubis/lib/store/memory"
+	"github.com/ToastyTheBot/anubis/internal/dns"
+	"github.com/ToastyTheBot/anubis/lib/store/memory"
 	"github.com/neilotoole/slogt/v2"
 )
 

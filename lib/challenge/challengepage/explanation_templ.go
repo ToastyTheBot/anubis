@@ -8,7 +8,7 @@ package challengepage
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-import "github.com/TecharoHQ/anubis/lib/localization"
+import "github.com/ToastyTheBot/anubis/lib/localization"
 
 // Explanation renders the "Why am I seeing this?" details block.
 func Explanation(localizer *localization.SimpleLocalizer) templ.Component {

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/lib/localization"
+	"github.com/ToastyTheBot/anubis/lib/localization"
 )
 
 func TestExplanationHTML(t *testing.T) {

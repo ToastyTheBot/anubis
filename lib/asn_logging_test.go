@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/lib/geoip/geoiptest"
+	"github.com/ToastyTheBot/anubis/lib/geoip/geoiptest"
 )
 
 func TestGetRequestLoggerASN(t *testing.T) {

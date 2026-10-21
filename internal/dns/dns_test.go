@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/store/memory"
+	"github.com/ToastyTheBot/anubis/lib/store/memory"
 	"github.com/neilotoole/slogt/v2"
 )
 

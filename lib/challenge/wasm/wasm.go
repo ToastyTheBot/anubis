@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"strconv"
 
-	chall "github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/localization"
-	"github.com/TecharoHQ/anubis/wasm"
-	"github.com/TecharoHQ/anubis/web"
+	chall "github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/localization"
+	"github.com/ToastyTheBot/anubis/wasm"
+	"github.com/ToastyTheBot/anubis/web"
 	"github.com/a-h/templ"
 )
 

@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/internal/iplist"
+	"github.com/ToastyTheBot/anubis/internal/iplist"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/lib/config"
 	"github.com/gaissmai/bart"
 )
 

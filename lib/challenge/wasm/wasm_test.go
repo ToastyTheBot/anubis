@@ -11,11 +11,11 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/policy"
-	"github.com/TecharoHQ/anubis/wasm"
-	"github.com/TecharoHQ/anubis/web"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/wasm"
+	"github.com/ToastyTheBot/anubis/web"
 )
 
 // difficulty is intentionally tiny so that solving the proof of work in tests

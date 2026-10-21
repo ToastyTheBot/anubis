@@ -10,10 +10,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/localization"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/localization"
 	"github.com/a-h/templ"
 )
 

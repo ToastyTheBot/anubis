@@ -37,7 +37,7 @@ var TestCookieName = "techaro.lol-anubis-cookie-verification"
 // don't send it on that follow-up navigation since it's a same-site redirect, so
 // without this relay upstream analytics see the challenge page as the referer
 // instead of the site the visitor actually came from. See
-// https://github.com/TecharoHQ/anubis/issues/1596
+// https://github.com/ToastyTheBot/anubis/issues/1596
 var OriginalRefererCookieName = "techaro.lol-anubis-original-referer"
 
 // CookieDefaultExpirationTime is the amount of time before the cookie/JWT expires.

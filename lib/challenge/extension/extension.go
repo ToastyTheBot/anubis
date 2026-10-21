@@ -6,8 +6,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/store"
 	"github.com/a-h/templ"
 )
 

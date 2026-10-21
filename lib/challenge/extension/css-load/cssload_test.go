@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TecharoHQ/anubis"
+	"github.com/ToastyTheBot/anubis"
 
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/store/memory"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/store/memory"
 	"github.com/google/uuid"
 	"github.com/neilotoole/slogt/v2"
 )

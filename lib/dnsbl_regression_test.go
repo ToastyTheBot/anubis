@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/internal/dnsbl"
+	"github.com/ToastyTheBot/anubis/internal/dnsbl"
 )
 
 func TestDNSBLLookupDecision(t *testing.T) {

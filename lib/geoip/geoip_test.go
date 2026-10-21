@@ -17,9 +17,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/geoip"
-	"github.com/TecharoHQ/anubis/lib/geoip/geoiptest"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/geoip"
+	"github.com/ToastyTheBot/anubis/lib/geoip/geoiptest"
 	"github.com/maxmind/geoipupdate/v8/client"
 	"github.com/oschwald/maxminddb-golang/v2"
 )
