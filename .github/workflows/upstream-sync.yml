@@ -78,9 +78,11 @@ jobs:
           # Remove .gitignore rules that hide generated assets
           rm -f lib/challenge/preact/static/.gitignore
           rm -f lib/challenge/proofofwork/static/.gitignore
+          rm -f lib/challenge/challengepage/static/.gitignore
           rm -f web/static/js/.gitignore
           rm -f xess/.gitignore
           sed -i '/^web\/static\/locales\/\*\.json$/d' .gitignore
+          sed -i '/^web\/static\/wasm\/\(baseline\|simd128\)\/\*\.wasm$/d' .gitignore
 
           # Remove husky hooks that fail on git commit
           rm -rf node_modules/.husky .husky
@@ -92,6 +94,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           rm -rf .github .gitattributes .gitmodules .gitpod.yml .vscode
           git add -A
+          # Fail the sync if generated assets were silently skipped
+          git ls-files | grep -q 'static/js/bootstrap.mjs'
+          git ls-files | grep -q 'web/static/wasm/baseline/.*\.wasm'
           git commit --no-verify -m "build: assets for upstream ${TAG}"
 
           # Tag with the same version as upstream
