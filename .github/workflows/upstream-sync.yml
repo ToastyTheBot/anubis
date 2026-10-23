@@ -54,24 +54,26 @@ jobs:
           EXISTS=$(git ls-remote origin refs/tags/${TAG} | wc -l)
           echo "exists=${EXISTS}" >> "$GITHUB_OUTPUT"
 
-      - name: Skip if tag exists and not forced
-        if: 'steps.tagcheck.outputs.exists != ''0'' && inputs.force != true'
+      - name: Decide whether to sync
+        if: "steps.tagcheck.outputs.exists != '0' && inputs.force != true"
         run: |
-          echo "Tag ${{ steps.latest.outputs.tag }} already exists. Skipping."
-          exit 0
+          echo "Tag ${{ steps.latest.outputs.tag }} already exists. Skipping sync."
 
       - name: Clone upstream at tag
+        if: "steps.tagcheck.outputs.exists == '0' || inputs.force == true"
         run: |
           git clone --branch ${{ steps.latest.outputs.tag }} --depth 1 \
             https://github.com/TecharoHQ/anubis.git /tmp/anubis-upstream
 
       - name: Build assets
+        if: "steps.tagcheck.outputs.exists == '0' || inputs.force == true"
         working-directory: /tmp/anubis-upstream
         run: |
-          npm ci
+          # make assets depends on deps: npm ci + go mod download
           make assets
 
       - name: Rewrite module path and push tag
+        if: "steps.tagcheck.outputs.exists == '0' || inputs.force == true"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
