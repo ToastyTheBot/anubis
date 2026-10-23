@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/store"
 )
 
 func TestStoreCapacity(t *testing.T) {

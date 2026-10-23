@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/lib/geoip/geoiptest"
-	"github.com/TecharoHQ/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/lib/geoip/geoiptest"
+	"github.com/ToastyTheBot/anubis/lib/policy"
 )
 
 func TestInvalidChallengeMethod(t *testing.T) {

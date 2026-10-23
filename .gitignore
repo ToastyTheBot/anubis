@@ -21,9 +21,6 @@ node_modules
 # how does this get here
 doc/VERSION
 
-web/static/locales/*.json
 
 # Rust
 target/*
-web/static/wasm/baseline/*.wasm
-web/static/wasm/simd128/*.wasm

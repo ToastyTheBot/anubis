@@ -25,7 +25,7 @@ var (
 	list      = flag.Bool("list", false, "list every crawler this tool can update, then exit")
 	slogLevel = flag.String("slog-level", "INFO", "logging level (DEBUG, INFO, WARN, ERROR)")
 	timeout   = flag.Duration("timeout", 30*time.Second, "how long to wait for a single feed")
-	userAgent = flag.String("user-agent", "Anubis-botgenerate (+https://github.com/TecharoHQ/anubis)", "User-Agent to send when fetching feeds")
+	userAgent = flag.String("user-agent", "Anubis-botgenerate (+https://github.com/ToastyTheBot/anubis)", "User-Agent to send when fetching feeds")
 )
 
 var (

@@ -7,10 +7,10 @@ import (
 
 	"cel.dev/cel-go/cel"
 	"cel.dev/cel-go/common/types"
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/internal/dns"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/policy/expressions"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/internal/dns"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/policy/expressions"
 )
 
 type CELChecker struct {

@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/config"
 )
 
 func TestMetricsPprofCmdlineExposedWithoutAuthentication(t *testing.T) {

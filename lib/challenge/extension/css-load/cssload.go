@@ -10,10 +10,10 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/challenge/extension"
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/challenge/extension"
+	"github.com/ToastyTheBot/anubis/lib/store"
 	"github.com/a-h/templ"
 	"github.com/google/uuid"
 )

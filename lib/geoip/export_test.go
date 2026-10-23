@@ -4,7 +4,7 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/TecharoHQ/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/config"
 )
 
 // Test hooks. These let geoip_test drive the update loop one step at a time.

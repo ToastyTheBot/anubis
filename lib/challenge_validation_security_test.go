@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
 )
 
 type failingChallenge struct {

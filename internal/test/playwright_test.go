@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis"
+	"github.com/ToastyTheBot/anubis"
 	"github.com/mxschmitt/playwright-go"
 )
 

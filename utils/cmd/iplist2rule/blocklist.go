@@ -8,7 +8,7 @@ import (
 	"net/netip"
 	"strings"
 
-	"github.com/TecharoHQ/anubis/internal/iplist"
+	"github.com/ToastyTheBot/anubis/internal/iplist"
 )
 
 // ParseBlocklist reads a plain-text blocklist and returns every non-commented

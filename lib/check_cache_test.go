@@ -4,7 +4,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/TecharoHQ/anubis"
+	"github.com/ToastyTheBot/anubis"
 )
 
 func TestCheckResponsesNoStore(t *testing.T) {

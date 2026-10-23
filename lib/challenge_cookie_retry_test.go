@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/internal"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/internal"
 )
 
 // passChallengeCookie submits a solved zero difficulty challenge, optionally

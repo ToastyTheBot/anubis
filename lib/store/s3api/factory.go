@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/store"
 	awsConfig "github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 )

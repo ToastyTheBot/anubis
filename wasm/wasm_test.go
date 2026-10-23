@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/web"
+	"github.com/ToastyTheBot/anubis/web"
 	"github.com/tetratelabs/wazero"
 )
 

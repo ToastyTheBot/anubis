@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/store"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 )
 

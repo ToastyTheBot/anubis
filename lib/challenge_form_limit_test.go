@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TecharoHQ/anubis"
+	"github.com/ToastyTheBot/anubis"
 )
 
 func TestChallengeEndpointsLimitMultipartBodies(t *testing.T) {

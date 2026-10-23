@@ -7,7 +7,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/data"
+	"github.com/ToastyTheBot/anubis/data"
 )
 
 func TestGlobMatch(t *testing.T) {

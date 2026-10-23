@@ -17,14 +17,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/data"
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/geoip/geoiptest"
-	"github.com/TecharoHQ/anubis/lib/policy"
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/data"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/geoip/geoiptest"
+	"github.com/ToastyTheBot/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/lib/store"
 )
 
 // TLogWriter implements io.Writer by logging each line to t.Log.
@@ -407,7 +407,7 @@ func TestCookieSettings(t *testing.T) {
 	}
 }
 
-// Regression test for https://github.com/TecharoHQ/anubis/issues/1314
+// Regression test for https://github.com/ToastyTheBot/anubis/issues/1314
 //
 // A request without an Anubis cookie must not answer with a Set-Cookie that
 // clears it. Browsers issue subresource requests in parallel with the
@@ -1275,7 +1275,7 @@ func TestPassChallengeXSS(t *testing.T) {
 	})
 }
 
-// Regression test for https://github.com/TecharoHQ/anubis/issues/1596: the Referer
+// Regression test for https://github.com/ToastyTheBot/anubis/issues/1596: the Referer
 // header a visitor arrived with (e.g. an external social/referral link) must survive
 // the challenge round trip instead of being replaced by the internal challenge page
 // as the apparent referrer once the request reaches the upstream origin.

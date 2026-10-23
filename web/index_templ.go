@@ -10,10 +10,10 @@ import templruntime "github.com/a-h/templ/runtime"
 
 import (
 	"fmt"
-	"github.com/TecharoHQ/anubis"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/localization"
-	"github.com/TecharoHQ/anubis/xess"
+	"github.com/ToastyTheBot/anubis"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/localization"
+	"github.com/ToastyTheBot/anubis/xess"
 	"github.com/google/uuid"
 )
 
@@ -177,7 +177,7 @@ func base(title string, body templ.Component, impressum *config.Impressum, honey
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 13, " <a href=\"https://github.com/TecharoHQ/anubis\">Anubis</a> ")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 13, " <a href=\"https://github.com/ToastyTheBot/anubis\">Anubis</a> ")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

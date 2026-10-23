@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/TecharoHQ/anubis/test/cmd/cipra/internal"
+	"github.com/ToastyTheBot/anubis/test/cmd/cipra/internal"
 	"github.com/facebookgo/flagenv"
 )
 

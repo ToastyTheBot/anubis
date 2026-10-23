@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/lib/policy"
 )
 
 func TestAmbiguousPathCannotBypassDeny(t *testing.T) {

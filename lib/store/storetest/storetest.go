@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/lib/store"
 )
 
 func Common(t *testing.T, f store.Factory, config json.RawMessage) {

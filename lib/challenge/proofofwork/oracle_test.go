@@ -5,10 +5,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/internal"
-	"github.com/TecharoHQ/anubis/lib/challenge"
-	"github.com/TecharoHQ/anubis/lib/config"
-	"github.com/TecharoHQ/anubis/lib/policy"
+	"github.com/ToastyTheBot/anubis/internal"
+	"github.com/ToastyTheBot/anubis/lib/challenge"
+	"github.com/ToastyTheBot/anubis/lib/config"
+	"github.com/ToastyTheBot/anubis/lib/policy"
 )
 
 func TestInvalidProofDoesNotRevealExpectedDigest(t *testing.T) {

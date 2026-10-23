@@ -3,7 +3,7 @@ package memory
 import (
 	"testing"
 
-	"github.com/TecharoHQ/anubis/lib/store/storetest"
+	"github.com/ToastyTheBot/anubis/lib/store/storetest"
 )
 
 func TestImpl(t *testing.T) {

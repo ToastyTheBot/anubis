@@ -9,7 +9,7 @@ import (
 	"cel.dev/cel-go/common/types/ref"
 	"cel.dev/cel-go/common/types/traits"
 	"cel.dev/cel-go/ext"
-	"github.com/TecharoHQ/anubis/internal/dns"
+	"github.com/ToastyTheBot/anubis/internal/dns"
 )
 
 // BotEnvironment creates a new CEL environment, this is the set of

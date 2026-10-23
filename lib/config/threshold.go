@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/TecharoHQ/anubis"
+	"github.com/ToastyTheBot/anubis"
 )
 
 var (

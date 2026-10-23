@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/TecharoHQ/anubis/decaymap"
-	"github.com/TecharoHQ/anubis/lib/store"
+	"github.com/ToastyTheBot/anubis/decaymap"
+	"github.com/ToastyTheBot/anubis/lib/store"
 )
 
 type factory struct{}

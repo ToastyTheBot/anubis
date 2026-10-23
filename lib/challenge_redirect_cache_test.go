@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/TecharoHQ/anubis/internal"
+	"github.com/ToastyTheBot/anubis/internal"
 )
 
 func TestPassChallengeRedirectIsUncacheable(t *testing.T) {
